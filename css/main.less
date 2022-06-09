@@ -1,0 +1,230 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+// 设置底部的页面切换部分
+#pageChooseWrapper {
+    // 宽度和高度通过js进行设置
+    // 设置布局
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    position: absolute;
+    z-index: 10;
+
+    // 设置外观样式
+    background-color: #fff;
+    border-top: #BBBBBB 1px solid;
+
+    .pageChooseInnerBox {
+        // 设置布局（水平竖直方向居中对齐）
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            font-size: 25px;
+        }
+
+        span {
+            font-size: 10px;
+        }
+    }
+}
+
+// 设置领养目录页面
+#adoptDogsPageWrapper {
+
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    // display: flex;
+    // flex-direction: column;
+
+    // 设置顶部轮播图
+    #imglistWrapper {
+        overflow: auto;
+
+        #imglist {
+            display: flex;
+
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // 设置banner区域
+    #bannerWrapper {
+        // background-color: #bfa;
+        display: flex;
+
+        // 设置左侧index按钮列
+        #leftIndexWrapper {
+
+            flex: 0 0 auto;
+
+            .leftIndexBox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: #E1E3E6;
+                box-sizing: border-box;
+                border-right: 1px solid #BBBBBB;
+                border-bottom: 1px solid #BBBBBB;
+
+                &:first-child {
+                    border-top: 1px solid #BBBBBB;
+                }
+
+                span {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        // 设置右侧狗狗卡片页面
+        #rightDogsCardWrapper {
+
+            // background-color: #bfa;
+            overflow: auto;
+
+            .dogsCardBox {
+                margin: 0 auto;
+                margin-top: 20px;
+                // background-color: red;
+
+                border-bottom: #BBBBBB solid 1px;
+
+                .dogsCardInnerBox {
+                    display: flex;
+
+                    .dogsCardLeftImg {
+                        flex: 0 0 auto;
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+
+                    .dogsCardRightInfo {
+                        display: flex;
+                        flex-direction: column;
+
+                        justify-content: space-between;
+                        padding-left: 10px;
+                        
+                        font-size: 10px;
+                        .name {
+                            font-size: 16px;
+                        }
+
+                        .linkBox{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            border-radius: 3px;
+                            background-color: #BBBBBB;
+                            color: #fff;
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+    }
+}
+
+// 设置狗狗故事页面
+#dogStoryPageWrapper {
+    position: absolute;
+    z-index: 0;
+    background-color: #fff;
+    overflow: auto;
+
+    a.dogStoryCard {
+        display: flex;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid #BBBBBB;
+        border-radius: 10px;
+
+        // 设置左侧信息页面
+        div.dogStoryLeftInfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .date {
+                font-size: 10px;
+                color: #BBBBBB;
+            }
+            .title {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        // 设置右侧图片
+        div.dogStroyRightPic {
+
+            // 盒子的大小由js控制
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// 设置加入我们页面
+#joinUsPageWrapper {
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    overflow: auto;
+
+    div.joinUsTextBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+
+        border: #BBBBBB 1px solid;
+        border-radius: 10px;
+        
+        .topTextBar {
+            width: 90%;
+            .headTitle {
+                font-size: 20px;
+                margin: 10px 0px;
+            }
+            .mainText {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+
+        .bottomPicBar {
+            margin: 10px 0px;
+            margin-bottom: 20px;
+
+            img {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./iconfont/bottomIcon/iconfont.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 设置底部的主导航条 -->
+    <div id="pageChooseWrapper">
+        <div id="adoptDogs" class="pageChooseInnerBox">
+            <i class="iconfont icon-dog1"></i>
+            <span>领养目录</span>
+        </div>
+        <div id="dogStory" class="pageChooseInnerBox">
+            <i class="iconfont icon-dog"></i>
+            <span>狗狗故事</span>
+        </div>
+        <div id="joinUs" class="pageChooseInnerBox">
+            <i class="iconfont icon-dog-food"></i>
+            <span>加入我们</span>
+        </div>
+    </div>
+
+    <!-- 设置领养目录页面 -->
+    <div id="adoptDogsPageWrapper">
+        <!-- 轮播图区域  图片比例 3：2  -->
+        <div id="imglistWrapper">
+            <!-- 设置图片列表 -->
+            <div id="imglist">
+                <a href="javascript:;"><img src="./img/adoptDogsPage/imgList/圈圈.jpg" alt="" class="imglistImg"></a>
+                <a href="javascript:;"><img src="./img/adoptDogsPage/imgList/圈圈.jpg" alt="" class="imglistImg"></a>
+                <a href="javascript:;"><img src="./img/adoptDogsPage/imgList/圈圈.jpg" alt="" class="imglistImg"></a>
+                <a href="javascript:;"><img src="./img/adoptDogsPage/imgList/圈圈.jpg" alt="" class="imglistImg"></a>
+                <a href="javascript:;"><img src="./img/adoptDogsPage/imgList/圈圈.jpg" alt="" class="imglistImg"></a>
+            </div>
+
+            <!-- 设置底部导航点 -->
+            <div id="dotIndexWrapper">
+                <div class="dotIndex"></div>
+                <div class="dotIndex"></div>
+                <div class="dotIndex"></div>
+                <div class="dotIndex"></div>
+                <div class="dotIndex"></div>
+            </div>
+        </div>
+
+        <!-- 竖向索引条与右侧领养信息卡片区域 banner区域 -->
+        <div id="bannerWrapper">
+            <!-- 左侧竖向索引条 -->
+            <div id="leftIndexWrapper">
+                <div class="leftIndexBox" id="allDogsButton"><span>全部狗狗</span></div>
+                <div class="leftIndexBox" id="childDogsButton"><span>幼犬</span></div>
+                <div class="leftIndexBox" id="maleDogsButton"><span>小公狗</span></div>
+                <div class="leftIndexBox" id="femaleDogsButton"><span>小母狗</span></div>
+                <div class="leftIndexBox" id="uncompletedDogsButton"><span>已绝育</span></div>
+                <div class="leftIndexBox" id="completedDogsButton"><span>未绝育</span></div>
+                <div class="leftIndexBox" id="smallDogsButton"><span>小型犬</span></div>
+                <div class="leftIndexBox" id="bigDogsButton"><span>中大型犬</span></div>
+                <div class="leftIndexBox" id="happyDogsButton"><span>已领养</span></div>
+            </div>
+            <!-- 右侧信息卡片 -->
+            <div id="rightDogsCardWrapper">
+                <!-- class: childDogs maleDogs femaleDogs uncompletedDogs completedDogs smallDogs bigDogs happyDogs-->
+                <!-- 第一层box 方便生成分割下划线 -->
+                <!-- 大白 -->
+                <div class="dogsCardBox femaleDogs uncompletedDogs bigDogs">
+                    <div class="dogsCardInnerBox">
+                        <!-- 左侧图片区域 图片大小：3：2 -->
+                        <div class="dogsCardLeftImg">
+                            <img src="./img/adoptDogsPage/dogsCard/大白/1.jpg" alt="">
+                        </div>
+                        <!-- 右侧狗狗卡片区域 -->
+                        <div class="dogsCardRightInfo">
+                            <div class="name">大白</div>
+                            <div class="gender">小母狗 2~3岁</div>
+                            <div class="character">亲人温柔且聪明</div>
+                            <a class="linkBox" href="javascript:;"><span>更多图片</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- 设置狗狗故事页面 -->
+    <div id="dogStoryPageWrapper">
+        <!-- 狗狗故事卡片的外部容器 -->
+        <a href="javascript:;" class="dogStoryCard">
+            <!-- 左侧信息页面 -->
+            <div class="dogStoryLeftInfo">
+                <div class="date">6月7号</div>
+                <div class="title">从棚屋到铁笼，北区的未来何去何从？</div>
+            </div>
+            <!-- 右侧图片页面 -->
+            <div class="dogStroyRightPic">
+                <img src="./img/dogStoryPage/铁笼.jpg" alt="">
+            </div>
+        </a>
+        <a href="javascript:;" class="dogStoryCard">
+            <!-- 左侧信息页面 -->
+            <div class="dogStoryLeftInfo">
+                <div class="date">6月7号</div>
+                <div class="title">从棚屋到铁笼，北区的未来何去何从？</div>
+            </div>
+            <!-- 右侧图片页面 -->
+            <div class="dogStroyRightPic">
+                <img src="./img/dogStoryPage/铁笼.jpg" alt="">
+            </div>
+        </a>
+    </div>
+
+    <!-- 设置加入我们页面 -->
+    <div id="joinUsPageWrapper">
+        <div class="joinUsTextBox">
+            <div class="topTextBar">
+                <div class="headTitle">打赏赞助</div>
+                <div class="mainText">俗话说，一分钱难倒英雄汉，在救助流浪狗的过程中我们深深体会到了这一点。
+                    绝育需要钱、狗粮需要钱，甚至找到异地领养人之后的托运费用都需要钱。
+                    虽然社团的老师同学一直在捐款，但是杯水车薪。
+                    刷到网页的朋友能否考虑赞助一点？一杯奶茶钱或一瓶可乐钱，都可以，说不准就能帮我们度过难关！
+                    我们的财务支出每个月都会更新，保证大家的钱全都用在刀刃上！！</div>
+            </div>
+            <div class="bottomPicBar">
+                <img src="./img/joinUsPage/房姐收款码.png" alt="" class="bottomPic">
+            </div>
+        </div>
+        <div class="joinUsTextBox">
+            <div class="topTextBar">
+                <div class="headTitle">联系我们</div>
+                <div class="mainText">你是否选中了想要带回家的狗狗？
+                    你对如何更好的解决流浪狗问题有独特的见解么？
+                    请您添加铲屎官个人微信或加入QQ群聊，一起畅所欲言吧！</div>
+            </div>
+            <div class="bottomPicBar">
+                <img src="./img/joinUsPage/加入我们.png" alt="" class="bottomPic">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
